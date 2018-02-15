@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+ 
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/javascript" media="screen" href="./assets/javascript/game.js">
+    <!-- <script type="text/javascript" src="./assets/javascript/game.js"></script> -->
+    <script type="text/javascript" src="./assets/javascript/hangman.js"></script> 
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Hangman</h1>
+            <p class="lead">Basketball edition!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                    <h2>Press SPACE to start</h2>
+                    <h4>Streak</h4>
+                    <h5 id="streak"></h5>
+                    <h4>Your Word</h4>
+                    <h3 id="hiddenWord"></h3>
+                    <h4>Fouls to give</h4>
+                    <h3 id="fouls"></h3>
+                    <h4>Letters used</h4>
+                    <h3 id="guessedLetters"></h3>
+
+            </div>
+            <div class="col-md-6">
+                <img id="winner" src="./assets/images/winner.gif" alt="You Won"/>
+
+                <img id="fouledOut" src="./assets/images/fouledout.gif" alt="You fouled out"/>
+
+                <h2 id="newGame">Press SPACE to Start</h2>
+                <img id="game" src="" alt=""/>
+                
+            </div>
+        </div>
+
+    </div>
+    <script>
+        gameReset(); 
+        displayUpdate();
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+}
+
+#hiddenWord {
+    letter-spacing: 10px;
+}
+#winner, #fouledOut, #newGame {
+    
+}

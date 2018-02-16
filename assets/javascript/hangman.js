@@ -29,6 +29,9 @@ function gameReset() {
     document.getElementById("newGame").style.cssText="display: none";
     document.getElementById("fouledOut").style.cssText="display: none";
     document.getElementById("winner").style.cssText="display: none";
+    document.getElementById("tryAgain").style.cssText="display: none";
+    document.getElementById("win").style.cssText="display: none";
+    document.getElementById("loser").style.cssText="display: none";
 
     
 
@@ -78,6 +81,7 @@ function win() {
     if(hiddenWord.indexOf("_") === -1) {
        document.getElementById("winner").style.cssText = "display: block";
         document.getElementById("newGame").style.cssText = "display: block";
+        document.getElementById("win").style.cssText = "display: block";
         streak++;
         gameOver = true;
     }
@@ -85,10 +89,11 @@ function win() {
 
 
 function loss() {
-    if(fouls <= 0) {
-        alert("You fouled out!!");
+    if(remainingGuesses <= 0) {
+        
         document.getElementById("fouledOut").style.cssText = "display: block";
-        document.getElementById("newGame").style.cssText = "display: block";
+        document.getElementById("tryAgain").style.cssText = "display: block";
+        document.getElementById("loser").style.cssText = "display: block";
         streak = 0;
         gameOver = true;
         

@@ -5,6 +5,11 @@
 #hiddenWord {
     letter-spacing: 10px;
 }
-#winner, #fouledOut, #newGame {
-    
+
+#loser, #win {
+    color: #D90202;
+}
+
+.display-4 {
+    font-size: 84px;
 }
